@@ -5,7 +5,7 @@ const readUserData = require("./read-user-data");
 
 
 try {
-    readUserData({
+   const data = readUserData({
         "email": "hola@hola.com",
         "name": "Hola",
         "creditCardNumber" : 1234567890,
@@ -13,8 +13,9 @@ try {
         "expiration": "12/05",
         "dues": 3
     });
+    console.log(data);
 } catch (error) {
-    if(error instanceof CustomError) {
+    if(error instanceof PropertyError) {
         console.error(error.message);
     }
 }

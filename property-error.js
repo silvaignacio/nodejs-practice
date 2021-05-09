@@ -1,3 +1,5 @@
+const CustomError = require("./custom-error");
+
 /**
  * @author Ignacio Silva
  * @constructor property
