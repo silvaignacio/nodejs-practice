@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {*} cc 
+ * @returns Type Card
+ */
 const getTypeCard = (cc) => {
     let amex = new RegExp('^3[47][0-9]{13}$');
     let visa = new RegExp('^4[0-9]{12}(?:[0-9]{3})?$');
