@@ -1,5 +1,5 @@
 const assert = require('assert');
-const createCard = require('.');
+const createCard = require('../utils');
 
 
 

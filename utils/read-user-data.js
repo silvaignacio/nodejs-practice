@@ -1,4 +1,4 @@
-const CreditCard = require("./credit-card");
+const CreditCard = require("../model/credit-card");
 const getTypeCard = require("./get-type-card");
 
 /**

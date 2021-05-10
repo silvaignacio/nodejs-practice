@@ -1,22 +1,12 @@
-const CustomError = require("./custom-error");
-const PropertyError = require("./property-error");
-const readUserData = require("./read-user-data");
+const createCard = require("./utils");
 
-/**
- * 
- * @param {*} dataUser 
- * @returns Card Object created from Data Input User
- */
-const createCard = (dataUser) => {
-    try {
-        
-        return readUserData(dataUser);
-     } catch (error) {
-         if(error instanceof PropertyError) {
-             console.error(error.message);
-         }
-     }
-}
+const cardOne = createCard({
+    "email": "hola@hola.com",
+    "name": "Hola",
+    "creditCardNumber" : 344595230409548,
+    "cvc": 123,
+    "expiration": "12/05",
+    "dues": 3
+});
 
-module.exports = createCard;
-
+console.log(cardOne);
